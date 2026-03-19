@@ -30,7 +30,7 @@ print("""
 """)
 print("Multiple windows can be opened for a slight increase in speed.")
 print("")
-bytes = random._urandom(65500)
+bytes = random._urandom(65507)
 
 print("Use the url2ip.py tool to resolve the hostname.")
 ip = input('IP: ')
