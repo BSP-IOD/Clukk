@@ -24,7 +24,7 @@ print("")
 print("Multiple windows can be opened for a slight increase in speed.")
 print("")
 
-print("The maximum amount of bytes allowed by UDP is 65507")
+print("The maximum amount of bytes allowed by UDP is 65507.")
 print("Use the xb2b.py tool to convert KB and MB to bytes.")
 bytesAmt = int(input('Amount of bytes: '))
 bytes = random._urandom(bytesAmt)
@@ -50,8 +50,6 @@ print("")
 
 timeout = time.time() + float(duration)
 sent = 0
-
-
 
 while True:
 
