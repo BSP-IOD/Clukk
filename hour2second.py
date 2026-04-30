@@ -2,7 +2,7 @@ print("""
                 Clukk
              Release V2.3
              
-             Hour2Second
+                 H2S
 """)
 print("")
 hours = float(input("Enter amount of hours:"))
